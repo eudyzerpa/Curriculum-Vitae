@@ -1,0 +1,207 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link href="hojaestilo.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style6 {font-size: 10pt; font-weight: bold; color: #652200; }
+-->
+</style>
+<!--Script de Bienvenida-->
+<STYLE type="text/css">
+
+#divBienvenida {
+	position:absolute;
+	top:100px;
+	left: 6px;
+}
+.style7 {font-size: 8pt; color: #000000; font-family: Verdana;}
+</STYLE>
+<SCRIPT type="text/javaScript">
+<!--
+  var esNN4  = (document.layers) ? 1 : 0
+  var esIE4  = (document.all)    ? 1 : 0
+  var esVer4 = (esNN4 | esIE4)   ? 1 : 0
+
+  // variables globales
+  var mensajes = new Array
+  mensajes[0]  = 'Bienvenidos'
+  mensajes[1]  = 'a mi sitio'
+  mensajes[2]  = 'de Asesoría'
+
+  var colores = new Array
+  colores[0]  = '#202020'
+  colores[1]  = '#424242'
+  colores[2]  = '#8E8E8E'
+  colores[3]  = '#C2C2C2'
+  colores[4]  = '#E8E8E8'
+
+  // tamanyo inicial del fuente del mensaje
+  var tamanyoLetraInic  = 10
+
+  // tamanyo final del fuente del mensaje
+  var tamanyoLetraFinal = 50
+
+  // 'tasa' de crecimiento del tamanyo del fuente
+  var incrTamanyoLetra  =  5
+
+  // velocidad del zoom en milisegundos
+  var velocidadZoom=90
+
+  // para el degradado: tiempo de permanencia de cada color
+  var tiempoDegradado=350
+
+  // tipo de letra
+  var tipoLetra='Verdana'
+        
+  // para esconder o no al terminar la presentación
+  var ocultarAlFinal=true
+
+function reescribeDiv(numMsg, tam, color){
+  texto  = '<P ALIGN=\"center\" STYLE=\"font-family:' + tipoLetra
+  texto += '; FONT-SIZE:' + tam + 'px; COLOR:' + color + '\">'
+  texto += mensajes[numMsg] + '</P>'
+  if (esNN4) {
+     with (document.divBienvenida.document) {
+       open()
+       write(texto)
+       close()
+     }
+   } else {
+     divBienvenida.innerHTML=texto
+  }
+  if (tam<tamanyoLetraFinal) {
+    tam += incrTamanyoLetra
+    setTimeout("reescribeDiv("+numMsg+", "+ tam+", 'black')", velocidadZoom)
+  } else {
+    ++numMsg
+    if (numMsg<mensajes.length) {
+      setTimeout("reescribeDiv("+numMsg+", "+ tamanyoLetraInic+", 'red')",
+                 velocidadZoom)
+    } else {
+      degrada(0)
+    }
+  }
+} // fin de reescribeDiv()
+
+function ocultaBienvenida() {
+  if (esNN4) {
+    document.divBienvenida.visibility = 'hide'
+  } else {
+    divBienvenida.style.visibility    = 'hidden'
+  }
+}
+
+function degrada(numDegradado) {
+  texto  = '<P ALIGN=\"center\" STYLE=\"font-family:' + tipoLetra
+  texto += '; FONT-SIZE:' + tamanyoLetraFinal + 'px; COLOR:'
+  texto += colores[numDegradado] + '\">'
+  texto += mensajes[mensajes.length-1] + '</P>'
+  if (esNN4) {
+     with (document.divBienvenida.document) {
+       open()
+       write(texto)
+       close()
+     }
+   } else {
+     divBienvenida.innerHTML=texto
+  }
+  ++numDegradado
+  if (numDegradado<colores.length) {
+    setTimeout("degrada(" + numDegradado + ")", tiempoDegradado)
+  } else {
+    if (ocultarAlFinal) {
+      setTimeout("ocultaBienvenida()", tiempoDegradado)
+    }
+  }
+} // fin de degrada()
+
+function empieza() {
+  reescribeDiv(0, tamanyoLetraInic, 'black')
+}
+
+//-->
+</SCRIPT>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+
+<body>
+
+<DIV id="divBienvenida">
+</DIV> 
+
+<div id="Layer1" style="position:absolute; left:327px; top:182px; width:89px; height:7px; z-index:1"><span class="hojaestilo"><strong><em><a href="serviciointranet.htm">&nbsp;Ver mas.....</a> </em></strong></span></div>
+<div id="Layer3" style="position:absolute; left:365px; top:280px; width:122px; height:96px; z-index:3">
+  <div align="left"><span class="hojaestilo">La herramienta de computer associates<strong><em>&nbsp; Cleverpath </em></strong></span><span class="style7">es quizas la soluci&oacute;n de Portal corporativo mas interesante del momento. <a href="http://www.ca.com">Ver mas... </a></span></div>
+</div>
+<table width="605" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="4"><img src="new_products.jpg" border="0" width="607" height="24" alt=""></td>
+  </tr>
+  <tr>
+    <td width="203"><img src="t1.jpg" border="0" width="200" height="27" alt=""></td>
+    <td width="4">&nbsp;</td>
+    <td width="224">&nbsp;</td>
+    <td width="174">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><a href="serviciointranet.htm"><img src="pic3.jpg" border="0" width="200" height="162" alt="Servicios"></a></td>
+    <td class="style6"><p align="justify">          <p align="justify" class="hojaestilo"> <p align="justify" class="hojaestilo"></td>
+    <td><p align="justify" class="style6">Intranets Corporativas, </p>
+    <p align="justify" class="hojaestilo">Recientes estudios han concluido que a pesar de que la Web es interesante para distribuir informaci&oacute;n p&uacute;blica hacia el mundo, es quiz&aacute;s tan importante para distribuir informaci&oacute;n privada dentro de una compa&ntilde;&iacute;a; partiendo de esta premisa podemos pensar en la Intranet como una versi&oacute;n peque&ntilde;a y privada de la World Wide Web.<strong><em>&nbsp; </em></strong></p>
+    <p align="justify" class="hojaestilo"><strong></strong></p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><img src="p1.jpg" border="0" width="135" height="28" alt=""><a href="servicios.htm"><img src="min1.jpg" border="0" width="65" height="28" alt=""></a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<table width="610" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="5"><img src="line_right.jpg" border="0" width="603" height="6" alt=""></td>
+  </tr>
+  <tr>
+    <td><img src="t4.jpg" border="0" width="131" height="38" alt=""></td>
+    <td><img src="t5.jpg" border="0" alt=""></td>
+    <td><img src="t6.jpg" border="0" alt=""></td>
+    <td><img src="t7.jpg" border="0" alt=""></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+    <div id="Layer2" style="position:absolute; width:110px; height:56px; z-index:2; left: 36px; top: 309px;"><a href="http://www.consultorandino.com/cndno_es.html"><img src="lamp.jpg" alt="Consultor Andino tiene la herramienta Anti-Span de Trend Micro" width="99" height="50" border="0"></a></div></td>
+    <td><div id="Layer3" style="position:absolute; left:141px; top:267px; width:114px; height:107px; z-index:3">
+      <div align="justify"><span class="hojaestilo">El 45% de todo el correo que circulo a trav&eacute;s de Internet durante el a&ntilde;o 2003 fue correo SPAN. <a href="http://www.consultorandino.com/cndno_es.html">Consultor Andino </a>tiene la herramienta Anti-Span de Trend Micro.</span></div>
+    </div></td>
+    <td><a href="serv2.htm"><img src="pic6.jpg" border="0" alt="Training"></a></td>
+    <td>&nbsp;</td>
+    <td><a href="servicios.htm"><img src="pic8.jpg" border="0" alt="Consultor&iacute;a"></a></td>
+  </tr>
+  <tr>
+    <td><img src="p4.jpg" border="0"  alt=""></td>
+    <td><img src="p5.jpg" border="0"  alt=""></td>
+    <td><img src="p6.jpg" border="0"  alt=""></td>
+    <td><img src="p7.jpg" border="0"  alt=""></td>
+    <td><img src="p8.jpg" border="0"  alt=""></td>
+  </tr>
+  <tr>
+    <td colspan="5"><img src="bottom2.jpg" border="0" width="603" height="9" alt=""></td>
+  </tr>
+</table>
+</body>
+</html>

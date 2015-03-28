@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link href="hojaestilo.css" rel="stylesheet" type="text/css">
+<STYLE type="text/css">
+
+#divBienvenida {
+	position:absolute;
+	top:100px;
+	left: 6px;
+}
+.style7 {font-size: 10pt}
+</STYLE>
+
+<script language="JavaScript">
+<!--
+//By George Chiang (www.javascriptkit.com) JavaScript site.
+img1=new Image()
+img1.src="fold.gif"
+img2=new Image()
+img2.src="open.gif"
+ns6_index=0
+
+function change(e){
+
+if(!document.all&&!document.getElementById)
+return
+
+if (!document.all&&document.getElementById)
+ns6_index=1
+
+var source=document.getElementById&&!document.all? e.target:event.srcElement
+if (source.className=="folding"){
+var source2=document.getElementById&&!document.all? source.parentNode.childNodes:source.parentElement.all
+if (source2[2+ns6_index].style.display=="none"){
+source2[0].src="open.gif"
+source2[2+ns6_index].style.display=''
+}
+else{
+source2[0].src="fold.gif"
+source2[2+ns6_index].style.display="none"
+}
+}
+}
+document.onclick=change
+//-->
+</script>
+<title>Left</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body background="bg3.jpg">
+<div class="look">
+	<p class="style7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #652200"><b>Login</b></span>&nbsp;&nbsp;&nbsp;<input type="text" name="logn" size="12" maxlength="40"><br><br>
+	  &nbsp;&nbsp;&nbsp;<span style="color: #652200"><b>Password</b></span>&nbsp;&nbsp;<input type="password" name="passwd" size="12" maxlength="40"></body></html></p>
+<p><img src="fold.gif" class="folding"><a href="servicios.htm" target="mainFrame" class="hojaestilo style7">Servicios</a>
+  	</p>
+  <ul class="look2" style="list-style-image:url(list.gif);display:none">
+    <li><a href="serv1.htm" target="mainFrame"><font face="verdana" size="1">Desarrollo de soluciones a la medida</font></a></li>
+    <li><a href="serv2.htm" target="mainFrame"><font face="verdana" size="1">Training</font></a></li>
+	<li><a href="serv3.htm" target="mainFrame"><font face="verdana" size="1">Networking</font></a></li>
+  </ul>
+</div>
+
+<div class="look"><img src="fold.gif" class="folding"><a href="curriculumpdf.htm" target="mainFrame" class="hojaestilo style7" >Curriculum Vitae </a>
+<ul class="look1" style="list-style-image:url(list.gif);display:none">
+    <li><a href="datos.htm" target="mainFrame"><font face="verdana" size="1">Datos personales</font></a></li>
+    <li><a href="educacion.htm" target="mainFrame"><font face="verdana" size="1">Educación</font></a></li>
+    <li><a href="http://c.1asphost.com/eudyzerpa/cursos/cursos.asp" target="mainFrame"><font face="verdana" size="1">Cursos de especializasción</font></a></li>
+	<li><a href="certificado.htm" target="mainFrame"><font face="verdana" size="1">Certificaciones</font></a></li>
+	<li><a href="destrezas.htm" target="mainFrame"><font face="verdana" size="1">Habilidades y destrezas</font></a></li>
+	<li><a href="experiencia.htm" target="mainFrame"><font face="verdana" size="1">Experiencia</font></a></li>
+	<li><a href="referencias.htm" target="mainFrame"><font face="verdana" size="1">Referencias</font></a></li>
+</ul>
+
+
+<div class="look"><img src="fold.gif" class="folding"><a href="formweb.html" target="mainFrame" class="hojaestilo style7">Alumnos ITELCA</a>
+<ul class="look1" style="list-style-image:url(list.gif);display:none">
+    <li><a href="formweb.html" target="mainFrame"><font face="verdana" size="1">Consulta al Profesor</font></a></li>
+    <li><a href="formweb2.htm" target="mainFrame"><font face="verdana" size="1">No entend&iacute;</font></a></li>
+    
+</ul>
+</div>
+
+
+
+<div class="look"><img src="fold.gif" class="folding"><a href="http://cursointernet.foro.st" target="_blank" class="hojaestilo style7">Foros</a>
+  <ul class="look2" style="list-style-image:url(list.gif);display:none">
+    <li><a href="http://cursointernet.foro.st" target="_blank"><font face="verdana" size="1">Internet y Desarrollo de P&aacute;ginas Web<font</a></li>
+    <li><a href="http://cursointernet2.foro.st" target="_blank"><font face="verdana" size="1">Taller de Reparación y Mantenimiento</font></a></li>
+  </ul>
+</div>
+
+</body>
+</html>

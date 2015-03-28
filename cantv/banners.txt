@@ -1,0 +1,12 @@
+<applet code="Banners.class" width=350 height=80>
+<param name=textColor value=magenta>
+<param name="url" value="http://www.terra.es/personal3/paramesh/dinero">
+<param name=emboss value=false>
+<param name=font value=Helvetica>
+<param name=fps value=30>
+<param name=cpf value=3>
+<param name=borderWidth value=0>
+<param name=borderColor value=black>
+<param name=pause value=1.5>
+<param name=messages value="Applets de Java! {textColor=black} {bgColor=gray} {enter=zoomIn} {exit=wipeUp} {bgEnter=squeeze} {shadowColor=blue} {size=40} {fps=15} {cpf=3} | Cambia tu pagina  {bgColor=yellow} {bgEnter=squeeze} {enter=scrollUp} {pause=1} {exit=scrollRight} {cpf=6} {size=30} | Es facil!! {bgColor=green} {bgEnter=squeeze} {textColor=black} {enter=zoomIn} {pause=.1} {exit=none} {align=left} {repeat=2}| Es facil!! {bgColor=green} {textColor=black} {enter=zoomIn} {pause=.1} {exit=none} {align=right} {repeat=2}| Visita mi pagina {bgColor=yellow} {textColor=red} {enter=zoomIn} {exit=zoomOut} {size=40} |  En continua actualizacion {bgColor=yellow} {enter=wipeUp} {exit=zoomOut} {textColor=blue} {bgEnter=squeeze} {cpf=3} {size=20} | Bienvenido {bgColor=blue} {enter=wipeRight} {exit=wipeDown} {align=bottom} {effect=color} {size=40} {fps=20} {cpf=6} {pause=3} ">
+</applet>

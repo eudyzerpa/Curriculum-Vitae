@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Ejemplo area desplegable con la propiedad 'display':</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"><!
+IE4 incorpora la propiedad 'display' definida en CSS-1, gracias a la cual
+se controla si el objeto es mostrado y de qué manera.  Los valores que puede
+tomar la propiedad 'display' son 'block', 'inline', 'list-item' y 'none'.
+
+Lo que interesa es saber que, a diferencia de la propiedad 'visibility' donde
+el valor 'hidden' equivale a que no aparezca el objeto aunque sí que ocupa su
+espacio en la página, el valor 'none' significa que el objeto no exista
+->
+<link href="hojaestilo.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 10pt;
+	font-weight: bold;
+}
+.style2 {color: #652200}
+.style3 {font-size: 10pt; font-weight: bold; color: #652200; }
+-->
+</style>
+<STYLE type=text/css>.parrafo {
+	DISPLAY: block
+	
+p.Organizacin
+	{margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	tab-stops:-42.55pt -35.45pt -7.1pt 70.9pt 5.0cm right 523.45pt;
+	font-size:12.0pt;
+	font-family:Garamond;
+	font-weight:bold}
+ p.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	margin-left:0cm; margin-right:0cm; margin-top:0cm}
+</STYLE>
+
+<SCRIPT type=text/javaScript>
+<!--
+  var valores = new Array ();
+  valores[1] = 'block'
+  valores[2] = 'block'
+
+  function quita(cual) {
+    valores[cual] = (valores[cual] == 'block') ? 'none' : 'block'
+    eval('p'+cual + '.style.display=valores[cual]')
+  }
+
+//-->
+</SCRIPT>
+
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY><A onclick=quita(1) href="javascript:void(0)">
+<H3 align="center">Infraestructura</H3></A>
+<DIV class=parrafo id=p1>
+	<p class="Organizacin"><font color="#652200">Wireless LAN</font>&nbsp; </p>
+	<p class="style3">&nbsp;</p>
+	<p class="style3"><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: 400">
+	<span style="font-size: 12.0pt; font-family: Garamond">Planeación<b> </b>de 
+	Redes Inalámbricas de Topología <i>AD-HOC</i> e <i>INFRAESTRUCTURA </i>
+	</span></span></font></p>
+	<p class="style3">
+	<font color="#000000">
+	<span style="font-size: 12.0pt; font-family: Garamond; font-weight:400">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Instalación y configuración de hardware para redes 802.11a,&nbsp; 
+	802.11b,&nbsp; 802.11g&nbsp;&nbsp;&nbsp; </span></font></p>
+	<p class="style3" style="text-indent: -18.0pt; margin-left: 56.0pt">
+	<font color="#000000">
+	<span style="font-weight: 400">
+	<span lang="EN-GB" style="font-size: 12.0pt; font-family: Symbol">·<span style="font-style:normal; font-variant:normal; font-size:7.0pt; font-family:Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</span></span><b><u>
+	<span lang="EN-GB" style="font-size: 12.0pt; font-family: Garamond">LinkSys</span></u></b><u><span lang="EN-GB" style="font-size: 12.0pt; font-family: Garamond">&nbsp; 
+	Broadband Router&nbsp; W-G (SpeedBooster) ,&nbsp; NIC (PCMCIA / PCI / USB),&nbsp; Access 
+	Point</span></u></span></font></p>
+	<p class="style3" style="text-indent: -18.0pt; margin-left: 56.0pt">
+	<font color="#000000">
+	<span style="font-weight: 400">
+	<span lang="EN-GB" style="font-size: 12.0pt; font-family: Symbol">·<span style="font-style:normal; font-variant:normal; font-size:7.0pt; font-family:Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</span></span><b><u>
+	<span lang="EN-GB" style="font-size: 12.0pt; font-family: Garamond">D–Link</span></u></b><u><span lang="EN-GB" style="font-size: 12.0pt; font-family: Garamond">&nbsp; 
+	Router ,&nbsp; Access Point </span></u></span></font></p>
+	<p class="style3" style="text-indent: -18.0pt; margin-left: 56.0pt">
+	<font color="#000000">
+	<span style="font-weight: 400">
+	<span lang="EN-GB" style="font-size: 12.0pt; font-family: Symbol">·<span style="font-style:normal; font-variant:normal; font-size:7.0pt; font-family:Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</span></span><b><u>
+	<span lang="EN-GB" style="font-size: 12.0pt; font-family: Garamond">3Com</span></u></b><u><span lang="EN-GB" style="font-size: 12.0pt; font-family: Garamond"> 
+	Access Point ,&nbsp;&nbsp; NIC (PCMCIA&nbsp; &amp;&nbsp; PCI)</span></u></span></font></p>
+	<p class="style3" style="text-indent: -18.0pt; margin-left: 56.0pt">
+	<span style="font-weight: 400">
+	<font color="#000000">
+	<span lang="EN-GB" style="font-size: 12.0pt; font-family: Symbol">·<span style="font-style:normal; font-variant:normal; font-size:7.0pt; font-family:Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</span></span><b><u>
+	<span lang="EN-GB" style="font-size: 12.0pt; font-family: Garamond">Antenas</span></u></b></font><u><span lang="EN-GB" style="font-size: 12.0pt; font-family: Garamond"><font color="#000000"> 
+	Omnidireccionales y unidireccionales&nbsp;</font> </span></u></span></p>
+	<p class="MsoNormal" style="text-indent: -18.0pt; margin-left: 56.0pt">&nbsp;</p>
+	<p class="Organizacin"><font color="#652200">LAN&nbsp; (Cableado Estructurado Categoría 5/5E.)</font></p>
+	<p class="style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">&nbsp; 
+	<span style="font-weight: 400; font-size:12.0pt; font-family:Garamond">Armado de 
+	Conectores ST de Fibra Óptica.</span></font></p>
+	<p class="style3"><font color="#000000">
+	<span style="font-weight: 400; font-size:12.0pt; font-family:Garamond">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Armado de 
+	Patch Cord UTP punto a Punto 568 A /568 B, Patch Cord UTP Crossover, Puntos 
+	de Red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+	</font></p>
+	<p class="style3">
+	<font color="#000000">
+	<span style="font-weight: 400; font-family:Garamond; font-size:12.0pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<span style="font-size: 12.0pt; font-family: Garamond; font-weight:400">Instalación de 
+	Hardware para&nbsp; redes:&nbsp; Hub, NIC,&nbsp; Bridge,&nbsp; Transceiver. Armado de Patch
+	</span>Panel, </span> </font> </p>
+	<p class="style3">
+	<font color="#000000">
+	<span style="font-weight: 400; font-family:Garamond; font-size:12.0pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Segmentación de redes 
+	con Switch VLAN Catalyst 2600.</span></font></p>
+	<p class="MsoNormal" style="text-align:justify">&nbsp;</p>
+	<p class="Organizacin"><font color="#652200">Administración y Soporte de Sistemas Operativos de 
+	Redes Microsoft</font></p>
+	<p class="style3">&nbsp;<font color="#000000">&nbsp;&nbsp;&nbsp;<span style="font-weight: 400; font-size: 12.0pt; font-family: Garamond">&nbsp;&nbsp;
+	Instalación, Soporte y Administración de Windows Server 2003, 2000 Server, 
+	2000 Advanced Server,&nbsp;&nbsp; Migración de Plataforma&nbsp; NT Server 4.0/W9x &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Windows 
+	2000,. Operador de Servidores Netfinity 5500&nbsp; (8662 –5RY) &amp;&nbsp; e-Server 232 
+	xSeries, HP Proliant ML 350, Dell PowerEdge 1600sc.</span></font><p class="Organizacin">&nbsp;</p>
+	<p class="Organizacin"><font color="#652200">&nbsp;Supervisión de Personal &amp; 
+	Auditoría de Sistemas.</font></p>
+	<p class="style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">&nbsp;
+	<span style="font-size: 12.0pt; font-family: Garamond; font-weight:400">Coordinador de 
+	unidades Web y Help Desk. Control Perceptivo,&nbsp; Inventario de activos, Evaluación de Procedimientos</span></font></p>
+	<p>&nbsp;</DIV><A onclick=quita(2) 
+href="javascript:void(0)">
+<H3 align="center">Desarrollo</H3></A>
+<DIV class=parrafo id=p2>
+	<p class="MsoNormal"><font color="#652200"><b>
+	<span style="font-size: 12.0pt; font-family: Garamond">Web Master </span>
+	</b></font></p>
+	<p class="MsoNormal"><b>
+	<span style="font-size: 12.0pt; font-family: Garamond">&nbsp;</span></b></p>
+	<p class="MsoNormal" style="margin-left:36.0pt;text-indent:.75pt">
+	<span style="font-weight: 400; font-family:Garamond; font-size:12.0pt">
+	<font color="#000000">Administración de Soluciones de Portal Jasmine ii&nbsp; &amp; CleverPath de 
+	Computer Associates .</font></span></p>
+	<p class="MsoNormal" style="margin-left:36.0pt;text-indent:.75pt">
+	<span style="font-weight: 400; font-family:Garamond; font-size:12.0pt">
+	<font color="#000000">Desarrollo 
+	de lntranets con Visual InterDev (ASP 3.0).&nbsp; </font> </span> </p>
+	<p class="MsoNormal" style="margin-left:36.0pt;text-indent:.75pt">
+	<span style="font-weight: 400; font-family:Garamond; font-size:12.0pt">
+	<font color="#000000">Herramientas de Diseño DreamWeaver,&nbsp; Flash ,&nbsp; Fireworks y Adobe Photoshop / 
+	GoLive.</font></span></p>
+	<b><BR></b><font color="#652200"><b>Administración&nbsp; de&nbsp; Bases de Datos 
+	Relaciónales.</b></font><p class="MsoNormal" style="text-indent: .75pt; margin-left: 36.0pt">&nbsp;<p class="MsoNormal" style="text-indent: .75pt; margin-left: 36.0pt">
+	<span style="font-size: 12.0pt; font-family: Garamond; font-weight:400">
+	<font color="#000000">Microsoft 
+	SQL Server 2000/Access&nbsp; 2000</font></span><BR></DIV></BODY></HTML>
